@@ -128,3 +128,6 @@
 - 保留 “J. Liu”：全文其他章节引用 X. Liu & Ji (2023)，APA 要求同姓不同作者时加首字母。
 - 弯引号；语言学例句用 Leipzig 式三行（原文斜体 / 逐词注释 / 译文）。
 - ⟦待核⟧ 的地方在 Word 中黄色高亮。
+
+# R8 小改（2026-10-14）
+- 1.2 语料句改为 "The difference in association is mirrored in how conventional the corresponding RVCs are: In the CCL corpus of Mandarin, the RVC formed with the stronger-association V1 was generally attested in more documents than …"。理由：CCL 统计的是文档数而非出现次数；Introduction 尚未交代对数，不写 "seven of the eight"，用 "generally" 避免暗示所有对都成立（P6 相反）；例外及具体数字留在 Method。
