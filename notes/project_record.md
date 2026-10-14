@@ -1,6 +1,6 @@
 # 项目记录：儿童 RVC 与单语素 V1 的理解与产出（大纲 Introduction 修订）
 
-最后更新：2026-10-14（第 1 轮开始）
+最后更新：2026-10-14（4 轮完成；P1–P7 已处理，详见 notes/revision_log.md）
 
 ## 0. 编辑底稿与材料
 
@@ -45,7 +45,7 @@
 | P4 | culmination/telicity 段落像脚注，概念未引入 | 批注 27 | 第 1 轮：概念在开篇例子中自然引入，telicity 区分降为脚注式一句 |
 | P5 | RQ 措辞以“acceptance”为研究对象；RQ3 过抽象 | 批注 28–31 | 第 1 轮：保持 RQ 内容不变，区分构念（理解）与指标（接受度）；Exp 2 采用作者给定 RQ 和 0924 稿的清楚表述 |
 | P6 | 竞争解释是否产生不同预测未逐一说明（1010 §1.3） | 审稿视角 | 第 1 轮：在 1.3 中逐一列出 entailment / inference / pragmatic / typicality 解释及其对 RQ1、RQ2 的预测；说明二元任务不能区分的部分 |
-| P7 | 文献主张需核查（Chen 2017“transparency 促进学习”与题目“When transparency doesn't mean ease”可能矛盾等） | 文献题目 | 核查中（子任务） |
+| P7 | 文献主张需核查（Chen 2017“transparency 促进学习”与题目“When transparency doesn't mean ease”可能矛盾等） | 文献题目 | 已完成：见 evidence_check.md；9 处改正，3 处删除 |
 
 ## 4. 需核查的证据
 

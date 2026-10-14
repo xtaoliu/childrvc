@@ -21,4 +21,21 @@
 
 ## B. 语义与类别文献
 
-（等待第二组核查结果，见下文更新）
+| 文献 | 原稿主张 | 核查结果 | 修订处理 |
+|---|---|---|---|
+| Talmy (1991, 2000) | “intended vs attained” 两分；Mandarin 动词蕴含/不蕴含 | ⚠️ 实为四类动词：intrinsic-、moot-、implied-、attained-fulfillment；underfulfillment 是卫星成分（V2）的功能，不是动词类型；二手来源称 Talmy 认为 implied-fulfillment 是汉语的主要类型，且汉语没有 attained-fulfillment 动词；Talmy 本人的 *shā* 例句未见原文 | 改为“implied-fulfillment verbs … a major type in Mandarin”；不再把 Talmy 写成两分 |
+| Kou & Hohenstein (2022) | “argue that Mandarin includes attained-fulfillment verbs”（1010 §1.1.3） | ❓ 摘要：四种 fulfillment 类型 + 三条诊断标准，用英语和汉语动词举例；未见其关于汉语有无 attained 动词的结论（此争论另见 Yan 2005；Thepkanjana & Uehara） | **删除**该归属；只写“区分四种类型并提出诊断标准” |
+| Kou & Hohenstein (2024) | 方式/结果/意图 | ✅ 意图把方式与结果联系起来；fulfilment 类型对应结果确定性的不同程度；“more like a cline” | 保留，并用于支持“蕴含强度可变” |
+| Tai (1984) | *shā* 不蕴含死亡；汉语缺少 accomplishment 动词 | ✅（二手）Tai (1984: 291)“杀了两次没死”类例子；具体中文措辞未核 | 改为不引具体例句的转述 |
+| Martin, Sun, Liu & Demirdache | 2020 年；zero-change construal | ⚠️ 2020 年为工作坊年份，论文集 2023 年出版（Tübingen）；主张是：这些动词**是**使役动词，尽管允许零变化解读；时间跨度状语诊断未核 | 年份改为 2023；主张改为“causative verbs that nevertheless allow zero-change construals” |
+| Barsalou (1985) | 目标衍生范畴的典型性取决于理想值和例示频率 | ✅ 在目标衍生范畴中，集中趋势不能预测典型性，理想值和例示频率可以 | 措辞限定为目标衍生范畴，并补出“而非集中趋势” |
+| Kim & Murphy (2011) | 最能达成目标的成员未必最典型 | ✅ 具有理想特征的样例通常被评为**不如**一般样例典型 | 改为“exemplars with goal-serving properties are not necessarily rated as more typical”，不写成“理想值提高典型性” |
+| Han (2021) | V1 事件与结果之间的因果关系 | ⚠️ 力动态分析：一个实体对另一个实体施力；Han 明确不采用事件对事件的因果；页码 191–222 未核 | 改写为“force exerted by one entity on another; V1 names the action through which the force is realized”；页码标待核 |
+| Li (1990, 1995) | 题元识别；题元层级与使役层级 | ✅（摘要） | 保留 |
+| Katsos & Bishop (2011) | 二元任务中的语用容忍 | ✅ 二元任务中儿童接受信息不足的陈述，三级奖励任务中给予较低评价 | 用于论证语用解释在二元任务中未必表现为拒绝 |
+| Papafragou & Musolino (2003); Skordos & Papafragou (2016) | 信息不足与相关性 | ✅ 5 岁儿童比成人更多接受信息不足的陈述；备选项可及且相关时儿童能推出隐含义 | 保留；Skordos & Papafragou 的 DOI 待核 |
+| McRae & Matsuki (2009); Bicknell et al. (2010) | 事件预期取决于动词与论元的组合 | ✅ | 保留 |
+| Huang (2006) | 非作格 V1 的结果式 | ✅（摘要） | 保留 |
+| Tham (2012) | *dòng-liè* 等状态变化 V1 | ❓ 摘要未涉及 | **删除** |
+| Beavers (2011); Tversky & Kahneman (1974); Gergely & Csibra (2003) | — | 未核查 | 修订稿 Introduction 不再引用（删减后论证不依赖它们） |
+
