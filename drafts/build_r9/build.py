@@ -284,6 +284,11 @@ def build_table1(anchor):
         a, b = tbl.rows[1 + 2 * i], tbl.rows[2 + 2 * i]
         for j in range(3):
             a.cells[j].merge(b.cells[j])
+    for ri, row in enumerate(tbl.rows):
+        trPr = row._tr.get_or_add_trPr(); cs = OxmlElement("w:cantSplit"); trPr.append(cs)
+        if ri < len(tbl.rows) - 1:
+            for c in row.cells:
+                for cp in c.paragraphs: cp.paragraph_format.keep_with_next = True
     insert_before(tbl, anchor) if False else anchor._p.addprevious(tbl._tbl)
     note = make_par(tnote)
     r = note.add_run("Note."); r.italic = True
