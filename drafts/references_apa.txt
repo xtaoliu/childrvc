@@ -1,0 +1,27 @@
+Barsalou, L. W. (1985). Ideals, central tendency, and frequency of instantiation as determinants of graded structure in categories. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 11*(4), 629–654. https://doi.org/10.1037/0278-7393.11.1-4.629
+Bicknell, K., Elman, J. L., Hare, M., McRae, K., & Kutas, M. (2010). Effects of event knowledge in processing verbal arguments. *Journal of Memory and Language, 63*(4), 489–505. https://doi.org/10.1016/j.jml.2010.08.004
+Chen, J. (2008). *The acquisition of verb compounding in Mandarin Chinese* [Doctoral dissertation, Vrije Universiteit Amsterdam]. LOT.
+Chen, J. (2017). When transparency doesn't mean ease: Learning the meaning of resultative verb compounds in Mandarin Chinese. *Journal of Child Language, 44*(3), 695–718. https://doi.org/10.1017/S0305000916000192
+Chen, J. (2018). "He killed a chicken, but it didn't die": An empirical study of the lexicalization of state change in Mandarin monomorphemic verbs. *Chinese Language and Discourse, 9*(2), 136–161. https://doi.org/10.1075/cld.17007.che
+Deng, X. (2019). The acquisition of resultative verb compounds in Mandarin Chinese. *Journal of Chinese Linguistics, 47*(1), 42–81. https://doi.org/10.1353/jcl.2019.0002
+Han, P. (2021). Reanalyzing Mandarin V1–V2 resultative constructions—A force-theoretic approach. *Canadian Journal of Linguistics/Revue canadienne de linguistique, 66*(2), 191–222. https://doi.org/10.1017/cnj.2021.11 ⟦待核：页码⟧
+Hsu, N., Rispoli, M., & Hadley, P. A. (2019). Mastering the grammar of complex events: Evidence from Mandarin resultative verb compounds. *Language Learning and Development, 15*(3), 255–277. https://doi.org/10.1080/15475441.2019.1590204
+Huang, C.-T. J. (2006). Resultatives and unaccusatives: A parametric view. *Bulletin of the Chinese Linguistic Society of Japan, 2006*(253), 1–43. https://doi.org/10.7131/chuugokugogaku.2006.1
+Katsos, N., & Bishop, D. V. M. (2011). Pragmatic tolerance: Implications for the acquisition of informativeness and implicature. *Cognition, 120*(1), 67–81. https://doi.org/10.1016/j.cognition.2011.02.015
+Kim, S., & Murphy, G. L. (2011). Ideals and category typicality. *Journal of Experimental Psychology: Learning, Memory, and Cognition, 37*(5), 1092–1112. https://doi.org/10.1037/a0023916
+Kou, X., & Hohenstein, J. (2022). Fulfillment types in Realization events: Definition, distinctions, and diagnostics. *Lingua, 269*, Article 103204. https://doi.org/10.1016/j.lingua.2021.103204
+Kou, X., & Hohenstein, J. (2024). Manner, result, and intention: Implications for event typology from a cognitive account of verb semantics based on fulfilment types. *Language and Cognition, 16*(4), 1053–1078. https://doi.org/10.1017/langcog.2023.72
+Li, C. N., & Thompson, S. A. (1981). *Mandarin Chinese: A functional reference grammar*. University of California Press.
+Li, P., & Bowerman, M. (1998). The acquisition of lexical and grammatical aspect in Chinese. *First Language, 18*(54), 311–350. https://doi.org/10.1177/014272379801805404
+Li, Y. (1990). On V-V compounds in Chinese. *Natural Language & Linguistic Theory, 8*(2), 177–207. https://doi.org/10.1007/BF00208523
+Li, Y. (1995). The thematic hierarchy and causativity. *Natural Language & Linguistic Theory, 13*(2), 255–282. https://doi.org/10.1007/BF00992783
+Liu, J. (2018). *(Non-culminating) accomplishments in child and adult Mandarin* [Doctoral dissertation, Université de Nantes]. ⟦待核：题名与链接⟧
+Liu, J., van Hout, A., & Demirdache, H. (2026). Mandarin children's acquisition of event culmination. *Languages, 11*(9), Article 190. https://doi.org/10.3390/languages11090190
+Ma, W., Golinkoff, R. M., Song, L., & Hirsh-Pasek, K. (2021). Using verb extension to gauge children's verb meaning construals: The case of Chinese. *Frontiers in Psychology, 11*, Article 572198. https://doi.org/10.3389/fpsyg.2020.572198
+Martin, F., Sun, H., Liu, J., & Demirdache, H. (2023). On the zero-change construal of causative simple verbs in Mandarin Chinese. In P. Liu, E. Sjovall, X. Sun, P. Berezovskaya, & V. Hohaus (Eds.), *Proceedings of TripleA 7*. Universität Tübingen. ⟦待核：页码与链接⟧
+McRae, K., & Matsuki, K. (2009). People use their knowledge of common events to understand language, and do so as quickly as possible. *Language and Linguistics Compass, 3*(6), 1417–1429. https://doi.org/10.1111/j.1749-818X.2009.00174.x
+Skordos, D., & Papafragou, A. (2016). Children's derivation of scalar implicatures: Alternatives and relevance. *Cognition, 153*, 6–18. https://doi.org/10.1016/j.cognition.2016.04.006 ⟦待核：DOI⟧
+Sybesma, R. (1999). *The Mandarin VP*. Kluwer Academic.
+Tai, J. H.-Y. (1984). Verbs and times in Chinese: Vendler's four categories. In D. Testen, V. Mishra, & J. Drogo (Eds.), *Papers from the parasession on lexical semantics* (pp. 289–296). Chicago Linguistic Society. ⟦待核：题名 time/times⟧
+Talmy, L. (1991). Path to realization: A typology of event conflation. *Proceedings of the Annual Meeting of the Berkeley Linguistics Society, 17*, 480–519. https://doi.org/10.3765/bls.v17i0.1620
+Talmy, L. (2000). *Toward a cognitive semantics: Vol. 2. Typology and process in concept structuring*. MIT Press.

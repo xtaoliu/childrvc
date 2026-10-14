@@ -110,3 +110,21 @@
 - 待定：chuí 的用字；是否在 Method 中以 RVC 频次作为协变量做敏感性分析（应对“熟悉度”这一替代解释）。
 
 - 作者确认 P10 写作“锤碎”：保留的 8 对中 7 对方向一致（P6 例外）；R7 正文改为 “in seven of the eight pairs”。
+
+# R8（2026-10-14）：APA 7 格式 + 剩余三处修改
+
+交付稿：`drafts/Introduction_R8_APA.docx`（由 `drafts/build_apa_docx.js` 从 `Introduction_R8_APA.md` 和 `references_apa.txt` 生成）。
+
+**内容修改**
+1. V1 分类的分歧从原 1.1 移到“Monomorphemic V1s: Classification, Result Likelihood, and Action Typicality”一节，与两个维度放在一起，按老师要求。新增一句交代原 Strong/Weak 的来源（Martin et al. 的时间跨度状语诊断，据 0507 稿），出处待核。
+2. 开篇改用带注释的例句：(1) 剥开荔枝 vs. 剥荔枝；(2) 采用 0507 稿作者自己的取消例句“修了电脑但没修好”，并对比 RVC 版本的矛盾。加入老师批注中的问题 “Can Mandarin-speaking children distinguish RVCs from their V1s in this respect?”。
+3. 开篇第 4 段删去细节（Chen 2017 的 *guān*、Liu 的具体年龄结果），只留结论；细节放在 Comprehension 一节，避免重复。
+
+**APA 7 格式**
+- 首页标题加粗居中，不用 “Introduction” 标题；各小节用二级标题（左对齐加粗），不编号。原文中的 “Section 1.2/3” 改为文字指引（如 “see Method”）。
+- 版式：Times New Roman 12 号、双倍行距、1 英寸页边距、页码右上、首行缩进 0.5 英寸；参考文献另起一页，悬挂缩进；脚注单倍行距。
+- 引用：括号内用 &，叙述中用 and；三位及以上作者从首次引用起用 et al.；同一括号内多篇按字母排序（如 Kou & Hohenstein, 2024; Talmy, 1991, 2000）；冒号后若是完整句，首字母大写。
+- 数字：10 及以上和年龄用阿拉伯数字（如 “10 pairs”“5 years of age”）。
+- 保留 “J. Liu”：全文其他章节引用 X. Liu & Ji (2023)，APA 要求同姓不同作者时加首字母。
+- 弯引号；语言学例句用 Leipzig 式三行（原文斜体 / 逐词注释 / 译文）。
+- ⟦待核⟧ 的地方在 Word 中黄色高亮。
