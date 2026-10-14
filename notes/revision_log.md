@@ -108,3 +108,5 @@
 - CCL 检索结果见 `corpus/corpus_check.md` 第 0 节：保留的 8 对中，6 对较强组 RVC 远多于较弱组；P6 相反；P10 取决于 chuí 写作“锤”还是“捶”。
 - 1.2 末段新增一句：两组的对比也体现在对应 RVC 的常规程度上，具体数字放在 Method（Section 3）。措辞是“more frequent … in most pairs, although most of the weaker combinations are attested”，**不写“决定组合限制”**，因为较弱组的组合大多有用例。
 - 待定：chuí 的用字；是否在 Method 中以 RVC 频次作为协变量做敏感性分析（应对“熟悉度”这一替代解释）。
+
+- 作者确认 P10 写作“锤碎”：保留的 8 对中 7 对方向一致（P6 例外）；R7 正文改为 “in seven of the eight pairs”。

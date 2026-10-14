@@ -19,4 +19,4 @@ pair,set,RVC,CCL_documents_raw,lines_checked,true_RVC_share_in_checked_lines,est
 9,weaker,冲干净,316,220,~0.95-1.0,~300-316,auto + 10–12-line hand spot check,
 10,stronger,夹碎,51,57,0.93,~48,all lines by hand,文件夹|碎片 excluded
 10,weaker,锤碎,18,20,~0.70,~13,all lines by hand,excludes 锤碎机 / 抡锤|碎石 (锤 as noun)
-10,weaker(alt. character),捶碎,96,108,~0.98,~95,all lines by hand,mostly repeated recipe texts (羊骨捶碎)
+10,not used (author confirmed 锤碎),捶碎,96,108,~0.98,~95,all lines by hand,mostly repeated recipe texts (羊骨捶碎)
