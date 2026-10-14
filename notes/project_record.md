@@ -65,3 +65,4 @@
 - 剔除 P7（典型性方向相反）和 P8（两项差异均不可靠），作者说明老师此前已要求剔除，分析计划可以相应修改。
 - 结果关联由 likelihood 和 typicality 共同定义，不再区分两者的贡献。
 - 对应稿件：`drafts/Introduction_R5_grouped.md/.docx`。原连续评分版本保留为 `Introduction_revised_20261014.*`。
+- RVC 频次（CCL）不作为协变量，只在 Method 的材料确认部分（stimuli verification）列出，与 N1/N3 一起刻画两组。Introduction R7 中的语料句指向 Section 3，与此一致。

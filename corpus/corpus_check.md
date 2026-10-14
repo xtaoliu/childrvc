@@ -43,7 +43,7 @@
 - Introduction 只放一句，指向 Method：
   > In a large corpus of Mandarin, RVCs formed with the stronger-association V1 were more frequent than those formed with the weaker-association partner in most pairs.
 - 具体数字和例外（P6、P10 用字）放在 Method 的材料部分报告。
-- Discussion 需要回应“熟悉度”这一替代解释：较强组的 RVC 更常见，可能让儿童对较强组 V1 的判断受到 RVC 熟悉度的影响。可以把 RVC 频次作为协变量做敏感性分析，这需要你决定。
+- Discussion 需要回应“熟悉度”这一替代解释：较强组的 RVC 更常见，可能让儿童对较强组 V1 的判断受到 RVC 熟悉度的影响。作者决定：不作协变量，只在 Method 的材料确认部分列出频次；Discussion 的局限部分建议用一句话承认这一替代解释。
 
 （以下第 1–5 节为早先基于 wordfreq 的初步检查，结论与 CCL 一致，作为补充保留。）
 
