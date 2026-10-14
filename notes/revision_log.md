@@ -131,3 +131,9 @@
 
 # R8 小改（2026-10-14）
 - 1.2 语料句改为 "The difference in association is mirrored in how conventional the corresponding RVCs are: In the CCL corpus of Mandarin, the RVC formed with the stronger-association V1 was generally attested in more documents than …"。理由：CCL 统计的是文档数而非出现次数；Introduction 尚未交代对数，不写 "seven of the eight"，用 "generally" 避免暗示所有对都成立（P6 相反）；例外及具体数字留在 Method。
+
+# R8：1.3 节按 Chen (2017) 全文重写（2026-10-14）
+- 作者提供 Chen (2017) PDF，核实：*guān*、*zhāi* 接受度显著低于其余六个 V1；同文成人评定支持；RVC 约 4;6 达到成人水平；V1 到 6;1 仍严于成人。
+- 1.3 采用作者提出的开头（儿童需要学什么），按 RVC → V1 → 动词差异组织。
+- 未采用作者稿中的：Li & Bowerman 的“3 岁、resultative predicates”说法（摘要不支持）；“activity–accomplishment differences (Chen, 2018)”（无出处）；“see the discussion in J. Liu et al., 2026”（未核）；Papafragou & Musolino (2003)（已从参考文献删除）；“age differences … provide indirect evidence”（与 Predictions 不作年龄预测矛盾）；以 likelihood 单独作预测变量的段落（与两组联合分组的设计矛盾；likelihood/typicality 的论证已在 1.2）。
+- 开放问题一改为：4 岁的证据只有 Chen (2017) 一组 10 人。问题二补充 Chen 设计的局限：每个动词只配一个宾语和结果，动词差异与动作–结果关系混在一起。

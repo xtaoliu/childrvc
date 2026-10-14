@@ -9,7 +9,8 @@
 | 文献 | 原稿主张 | 核查结果 | 修订处理 |
 |---|---|---|---|
 | Chen (2017), JCL 44(3), 695–718 | (1010) “transparency facilitated learning RVC state-change meanings” | ⚠️ 摘要：“although transparency in form facilitates their learning of the state-change meanings of RVCs, Mandarin children have difficulties in unpacking the meanings of individual verbs”；被试 2;6、3;6、4;6、6;1 四组；摘要称为 *elicitation experiment* | 改为“透明度有助于习得 RVC 整体的状态变化义，但儿童难以拆分单个动词的意义”；漏掉的后半句正是本研究的出发点 |
-| Chen (2017) | 儿童对 *guān*“关”、*zhāi*“摘” 在无结果事件中的接受度低于其他 V1 | ❓ 摘要未提及；ResearchGate 片段提到儿童把 *guān* 理解为蕴含状态变化、而成人在无变化情境中也接受，但不清楚是 2017 年的数据还是背景综述；判断任务数据可能来自 Chen (2005, BUCLD 29 增刊) 或 Chen (2008) 博士论文 | 删去“guān/zhāi 低于其他 V1”的具体比较；保留“儿童倾向把单个动词理解为蕴含状态变化”，并标为**需作者核对全文和出处（2005/2008/2017）** |
+| Chen (2017) 全文补充 | 年龄与结果 | ✅ 各组均值 2;6、3;6、4;6、6;1，每组 10 人，另有成人组；任务实为是非判断（摘要称 elicitation）。RVC：4;6 和 6;1 组与成人无显著差异，2;6、3;6 组有时接受无结果事件（如 2;6 约 20%）。V1：所有儿童组都与成人显著不同，6;1 组仍是；成人无结果事件中 100% 接受 | 写入 1.3；“4 岁尚无证据”改为“仅有 Chen 一组 10 人” |
+| Chen (2017) | 儿童对 *guān*“关”、*zhāi*“摘” 在无结果事件中的接受度低于其他 V1 | ✅ 全文已核（作者提供 PDF）：Table 5–6，close、pick 两段视频的 V1 “是”回答显著少于其余六个（p = .034）；同文成人评定（5 点量表，取消结果句）中 *zhāi*/*guān* 最难接受；Chen 归因于 state-change implicature 强度 | 恢复进 1.3 |
 | J. Liu, van Hout & Demirdache (2026), *Languages* 11(9), 190 | 3 岁儿童有时接受 RVC 的无结果描述，5 岁基本拒绝；5 岁比成人更常拒绝单语素使役动词；*hǎojǐcì* 提高接受度 | ⚠️/✅ 摘要：3 岁儿童对两类动词都接受非完成解读（不区分 RVC 与 V1）；5 岁儿童拒绝 RVC 的非完成解读，但“over-rejected”单语素使役动词的非完成解读；*hǎojǐcì* 在所有年龄组都显著提高接受度；单语素使役动词触发“cancellable culmination inference”；另发现儿童对施事控制不敏感，而成人敏感 | 3 岁儿童改为“对两类形式都接受、尚未区分”；其余保留 |
 | J. Liu (2018) 博士论文 | telic 谓词可有非完成用法 | ❓ theses.fr 未检索到记录；题目引用形式不一 | 保留在脚注中，标记**需作者确认题名和链接** |
 | Chen (2018), CLD 9(2), 136–161 | 单语素动词状态变化含义强度呈连续体；归因于 activity–accomplishment 差异 | ✅ 前半句：“a cline of state-change implicature in the target verbs”（成人可接受度评定 + 多项选择任务）；❓ activity/accomplishment 的说法摘要中没有 | 前半保留并注明是成人数据；删去 activity/accomplishment 的归因 |
