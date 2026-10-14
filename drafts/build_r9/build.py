@@ -152,15 +152,43 @@ def replace_in_par(p, old, new):
     for r in p.runs:
         if old in r.text:
             r.text = r.text.replace(old, new); return True
-    full = p.text
-    if old in full:  # spans runs: put everything into first run with same formatting is risky; do minimal
-        raise SystemExit("span: " + old)
-    return False
+    runs = p.runs; texts = [r.text for r in runs]; full = "".join(texts)
+    k = full.find(old)
+    if k < 0: return False
+    end = k + len(old); pos = 0; first = True
+    for r, t in zip(runs, texts):
+        a, b = pos, pos + len(t); pos = b
+        if b <= k or a >= end: continue
+        if r.italic: raise SystemExit("span over italic: " + old)
+        lo, hi = max(k, a) - a, min(end, b) - a
+        r.text = t[:lo] + (new if first else "") + t[hi:]
+        first = False
+    return True
+EVENT_FIXES = [
+ ("depend on which V1 is used and on how that action is related", "depend on which V1 is used and on how the action it names is related"),
+ ("pairs of V1s that take the same object and share a target result", "pairs of V1s that take the same object and combine with the same V2"),
+ ("what makes a given V1 a ", "what makes the action named by a given V1 a "),
+ ("a V1’s relation to a result depends on the result in question", "the relation between the action named by a V1 and a result depends on the result in question"),
+ ("it characterizes the selected V1–object expressions by their association", "it characterizes the actions named by the selected V1–object expressions by their association"),
+ ("The relation between a V1 action and a target result", "The relation between the action named by a V1 and a target result"),
+ ("Once the V1–object action has been performed", "Once the action named by the V1–object expression has been performed"),
+ ("how a particular V1 event relates to a particular result", "how a particular action relates to a particular result"),
+ ("A V1–object expression has a stronger association with the target result than its partner when", "The action named by a V1–object expression has a stronger association with the target result than the action named by its partner when"),
+ ("adult reference measures of the selected V1–object–result relations", "adult reference measures of the relations between the selected actions and their target results"),
+ ("comparing V1s that act on the same object and share a target result", "comparing V1s that name actions on the same object with the same target result"),
+ ("so that one V1–object expression was expected to be more strongly associated", "so that one action was expected to be more strongly associated"),
+]
+applied = set()
 for p in paras[:ref_head_idx]:
     if "Section 1.2 addresses this relation.”" in p.text:
         replace_in_par(p, "Section 1.2 addresses this relation.”", "The next section addresses this relation.")
     if p.text.startswith("RQ3:"):
         replace_in_par(p, "RQ3:", "RQ3.")
+    for old, new in EVENT_FIXES:
+        if old in p.text:
+            replace_in_par(p, old, new); applied.add(old)
+missing = [o for o, n in EVENT_FIXES if o not in applied]
+if missing: raise SystemExit("not applied: " + repr(missing))
 
 # footnote text style
 try:
