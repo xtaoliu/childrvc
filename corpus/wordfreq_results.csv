@@ -1,0 +1,12 @@
+pair,stronger_RVC,zipf,stronger_V1,zipf,weaker_RVC,zipf,weaker_V1,zipf,tokenization_of_weaker_RVC
+1,剥开,2.69,剥,3.70,捏开,absent,捏,4.02,捏/开
+2,掀翻,3.03,掀,3.48,拍翻,absent,拍,5.21,拍/翻
+3,掰弯,absent,掰,3.70,按弯,absent,按,5.24,按/弯
+4,撕破,2.80,撕,3.85,拽破,absent,拽,3.82,拽/破
+5,吹灭,3.11,吹,4.65,挥灭,absent,挥,4.03,挥/灭
+6,踢倒,3.37,踢,4.46,推倒,3.55,推,4.87,推倒
+7,掐醒,absent,掐,3.50,叫醒,3.43,叫,5.58,叫醒
+8,涂红,3.02,涂,4.07,挠红,absent,挠,3.59,挠/红
+9,擦干净,absent,擦,4.38,冲干净,absent,冲,4.84,冲/干净
+10,夹碎,absent,夹,4.25,锤碎,absent,锤,3.77,锤/碎
+10,夹碎,absent,夹,4.25,捶碎,absent,捶,3.21,捶/碎
