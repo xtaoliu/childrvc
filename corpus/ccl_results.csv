@@ -1,0 +1,22 @@
+pair,set,RVC,CCL_documents_raw,lines_checked,true_RVC_share_in_checked_lines,est_true_documents,how_checked,note
+1,stronger,剥开,1768,181,0.96,~1700,auto + 10–12-line hand spot check,
+1,weaker,捏开,30,31,0.90,~28,all lines by hand,
+2,stronger,掀翻,1794,200,0.99,~1780,auto + 10–12-line hand spot check,
+2,weaker,拍翻,31,33,~0.33-0.42,~11-14,all lines by hand,excludes 翻拍/轻拍翻转/拍翻译 etc.
+3,stronger,掰弯,134,146,1.00,~134,auto + 10–12-line hand spot check,mostly slang sense 'turn (sb.) gay'; physical sense rare
+3,weaker,按弯,6,6,0.17,~1,all lines by hand,only 把他按弯腰; others 按|弯曲 or 按|弯沉
+4,stronger,撕破,2415,202,~0.95-1.0,~2300-2400,auto + 10–12-line hand spot check,includes idiom 撕破脸
+4,weaker,拽破,2,3,1.00,2,all lines by hand,
+5,stronger,吹灭,768,202,1.00,~768,auto + 10–12-line hand spot check,
+5,weaker,挥灭,126,127,0.00,0,all lines by hand,all 指挥|灭火 / 发挥|灭火 etc.; one figurative 挥灭暴秦 (destroy)
+6,stronger,踢倒,498,206,0.96,~480,auto + 10–12-line hand spot check,
+6,weaker,推倒,5812,211,0.99,~5750,auto + 10–12-line hand spot check,many abstract senses (推倒重来; topple a regime)
+7*,stronger,掐醒,7,7,1.00,7,all lines by hand,excluded pair
+7*,weaker,叫醒,4681,214,~0.95-1.0,~4500,auto + 10–12-line hand spot check,excluded pair
+8*,stronger,涂红,286,220,~0.32-0.43 (60-line sample),~90-125,sample of 60 by hand,excluded pair; many surname 涂 (涂红刚) and 滩涂|红树林; 涂红色/涂红漆 (V+O) excluded
+8*,weaker,挠红,16,19,0.05,1,all lines by hand,excluded pair; rest 阻挠|红军/红十字会
+9,stronger,擦干净,1887,205,~0.95-1.0,~1800-1890,auto + 10–12-line hand spot check,
+9,weaker,冲干净,316,220,~0.95-1.0,~300-316,auto + 10–12-line hand spot check,
+10,stronger,夹碎,51,57,0.93,~48,all lines by hand,文件夹|碎片 excluded
+10,weaker,锤碎,18,20,~0.70,~13,all lines by hand,excludes 锤碎机 / 抡锤|碎石 (锤 as noun)
+10,weaker(alt. character),捶碎,96,108,~0.98,~95,all lines by hand,mostly repeated recipe texts (羊骨捶碎)
