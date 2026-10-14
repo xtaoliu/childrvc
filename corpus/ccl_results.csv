@@ -1,4 +1,4 @@
-pair,set,RVC,CCL_documents_raw,lines_checked,true_RVC_share_in_checked_lines,est_true_documents,how_checked,note
+﻿pair,set,RVC,CCL_documents_raw,lines_checked,true_RVC_share_in_checked_lines,est_true_documents,how_checked,note
 1,stronger,剥开,1768,181,0.96,~1700,auto + 10–12-line hand spot check,
 1,weaker,捏开,30,31,0.90,~28,all lines by hand,
 2,stronger,掀翻,1794,200,0.99,~1780,auto + 10–12-line hand spot check,

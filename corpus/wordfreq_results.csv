@@ -1,4 +1,4 @@
-pair,stronger_RVC,zipf,stronger_V1,zipf,weaker_RVC,zipf,weaker_V1,zipf,tokenization_of_weaker_RVC
+﻿pair,stronger_RVC,zipf,stronger_V1,zipf,weaker_RVC,zipf,weaker_V1,zipf,tokenization_of_weaker_RVC
 1,剥开,2.69,剥,3.70,捏开,absent,捏,4.02,捏/开
 2,掀翻,3.03,掀,3.48,拍翻,absent,拍,5.21,拍/翻
 3,掰弯,absent,掰,3.70,按弯,absent,按,5.24,按/弯

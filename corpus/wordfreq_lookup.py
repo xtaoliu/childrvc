@@ -28,7 +28,8 @@ def look(w):
         return f"{zipf_frequency(w, 'zh', wordlist='large'):.2f}"
     return "absent"
 
-out = csv.writer(sys.stdout)
+# utf-8-sig so that Excel opens the Chinese text correctly
+out = csv.writer(open("wordfreq_results.csv", "w", newline="", encoding="utf-8-sig"))
 out.writerow(["pair", "stronger_RVC", "zipf", "stronger_V1", "zipf",
               "weaker_RVC", "zipf", "weaker_V1", "zipf", "tokenization_of_weaker_RVC"])
 for p, sr, sv, wr, wv in PAIRS:
