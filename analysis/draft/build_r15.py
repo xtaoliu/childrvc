@@ -45,9 +45,7 @@ set_cell(t1.rows[8].cells[3], "chě", "\n“pull”"); set_cell(t1.rows[8].cells
 set_cell(t1.rows[19].cells[4], "jiā-kāi"); set_plain(t1.rows[19].cells[7], "21")
 set_cell(t1.rows[20].cells[4], "chuí-kāi"); set_plain(t1.rows[20].cells[7], "1")
 note1 = find(doc, "Note. Likelihood was rated")
-replace_markup(note1, "ᶜ Includes many abstract uses.", "ᶜ Includes many abstract uses. ᵈ Includes idiomatic uses such as *chě-kāi sǎngzi* \"pull-open throat,\" \"raise one's voice.\" ᵉ The rating items for this pair used *zhuài* \"drag\" instead of *chě* and the target result *pò* \"torn\" (Pair 4) or *suì* \"smashed\" (Pair 10) instead of *kāi* \"open.\"")
-for ri in (7, 8): set_plain(t1.rows[ri].cells[0], "4\u1D49")
-for ri in (19, 20): set_plain(t1.rows[ri].cells[0], "10\u1D49")
+replace_markup(note1, "ᶜ Includes many abstract uses.", "ᶜ Includes many abstract uses. ᵈ Includes idiomatic uses such as *chě-kāi sǎngzi* \"pull-open throat,\" \"raise one's voice.\"")
 p63 = find(doc, "We also examined how conventional each RVC is.")
 replace_markup(p63, "(e.g., sī-pò liǎn “tear-torn face,” “fall out with someone”)", "(e.g., *chě-kāi sǎngzi* \"pull-open throat,\" \"raise one's voice\")")
 
@@ -151,6 +149,10 @@ set_text(p90, EXP1_RESULTS[0][1]); delete(p91)
 write_block(p90, EXP1_RESULTS[1:])
 p54 = find(doc, "Because each expression was paired with its own video")
 replace_markup(p54, " [逐项数值放附录]", " Item-level values are given in Table A1 in the Appendix.")
+replace_markup(p54, "appeared in 62% of first descriptions", "appeared in 74% of first descriptions")
+p56 = find(doc, "Twenty native speakers of Mandarin (21–35 years")
+replace_markup(p56, "the paper ended up torn?", "the paper ended up torn apart?")
+replace_markup(p56, "wants to break the walnut.", "wants to crack the walnut open.")
 p52 = find(doc, "Each of the 20 actions was filmed in a full-result and a zero-result version")
 replace_markup(p52, " [Figure 1：full-result 与 zero-result 视频的截图]", " Figure 1 shows stills from the four videos of one pair.")
 add_figure(p52, "fig1")
@@ -176,7 +178,7 @@ p109._p.addprevious(p110._p)
 def replace_par(prefix, keys):
     p = find(doc, prefix); set_text(p, DISC[keys[0]]); cur = p
     for k in keys[1:]: cur = insert_after(cur, DISC[k], style="Normal")
-replace_par("A larger effect of result realization on RVC", ["rvc", "rvc2"])
+replace_par("A larger effect of result realization on RVC", ["rvc", "rvc2", "rvc3"])
 replace_par("If children reject V1 descriptions of zero-result events more often", ["assoc"])
 replace_par("Why action–result association might matter", ["assoc_why"])
 replace_par("If children and adults show similar association effects", ["assoc_age"])
@@ -187,6 +189,9 @@ set_text(find(doc, "[结论待根据结果改写]"), CONCLUSION)
 
 # ---------- References ----------
 delete(find(doc, "Skordos, D., & Papafragou, A. (2016)"))
+sp = find(doc, "Speer, R. (2022)")
+newref = copy.deepcopy(sp._p); sp._p.addprevious(newref)
+set_text(Paragraph(newref, sp._parent), "Song, Z. T., & Haryu, E. (2025, August). *\"The end matters\": Endstate salience in change-of-state events affects Mandarin-speaking children's acceptance of verbal packaging patterns of action and result* [Poster presentation]. European Conference on Developmental Psychology (ECDP 2025), Prague, Czech Republic.")
 
 lastref = [p for p in doc.paragraphs if p.style.name == "Reference"][-1]
 h = insert_after(lastref, "Appendix", style="Heading 1"); h.paragraph_format.page_break_before = True
