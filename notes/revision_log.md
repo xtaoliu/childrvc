@@ -143,4 +143,11 @@
 
 **与 Ünal et al. (2016) 的对照：** 他们的 Indirectness 是从 Exp 1 数据中发现、再用新样本检验的；本研究的两组是事先设计的，所以引言保留理论先行的写法，不改为探索性措辞。只有“剔除哪两对”这一步是事后决定，需要如实交代。
 
-**仍待作者确认：** 成人评定（N1/N3）是否在 0507 稿的儿童分析之前收集。若是，可在 Adult Ratings 一节加一句说明。
+**补充（作者确认成人评定是在儿童数据分析之后收集的）：**
+5. The Present Study：评定改写为 “After the child data had been collected, adult ratings … were obtained to verify and characterize this contrast.”
+6. Adult Ratings：末尾说明评定在收集并初步分析儿童数据之后进行，评定者没有参加儿童实验，也没有获知儿童结果（后半句标 ⟦待核⟧）。
+7. Pair Selection 和 Limitations：改为“评定的收集和两对的剔除”都发生在初步分析之后。
+
+含义：两组的对比是事先设计的，RQ2 仍按事先设计的对比来写；但用评定定义两组、剔除两对都是事后步骤，因此 10 对的分析必须与主分析并列报告。
+
+**仍待作者确认：** 评定者是否确实没有参加儿童实验、也没有获知儿童结果。
