@@ -2,3 +2,4 @@ analysis/out/
 analysis/*.pkl
 analysis/comp.csv
 analysis/prod.csv
+__pycache__/
