@@ -44,7 +44,7 @@ m2sum <- function(m, nm, full=TRUE){ diag(m, nm)
       agl <- g$l[,idx(s,"zero","adult")] - (g$l[,idx(s,"zero","4yo")]+g$l[,idx(s,"zero","5yo")])/2
       cat(sprintf("Adults minus children, zero, %s: prob %s P(>0)=%s; logit %s\n", s, q(ag), pp(ag), q(agl))) } }
   invisible(list(allz=allz, d=d)) }
-m2 <- readRDS("out/m2_8.rds"); m2sum(m2, "m2_8"); cat("\n"); m2sum(readRDS("out/m2_10.rds"), "m2_10"); cat("\n== Leave-one-pair-out ==\n")
+m2 <- readRDS("out/m2_8.rds"); m2sum(m2, "m2_8"); cat("\n"); if (file.exists("out/m2_10.rds")) m2sum(readRDS("out/m2_10.rds"), "m2_10"); cat("\n== Leave-one-pair-out ==\n")
 for (f in Sys.glob("out/m2_lopo_*.rds")) { m <- readRDS(f); cat(basename(f), "\n"); m2sum(m, basename(f), full=FALSE) }
 ## ---------- Production ----------
 for (nm in c("p_rvc","p_target","p_rvc_8","p_target_8")) { f <- paste0("out/",nm,".rds"); if (!file.exists(f)) next; m <- readRDS(f); diag(m, nm)

@@ -13,7 +13,7 @@ setc <- function(d) {
   for (v in intersect(c("form", "result", "age", "assoc"), names(d))) contrasts(d[[v]]) <- contr.sum(nlevels(d[[v]]))
   d }
 comp <- read.csv("comp.csv") %>% setc(); comp$retained <- comp$retained %in% c("True", "TRUE", TRUE)
-c8 <- droplevels(subset(comp, retained)); v8 <- subset(c8, form == "V1"); v10 <- subset(comp, form == "V1")
+c8 <- setc(droplevels(subset(comp, retained))); v8 <- setc(droplevels(subset(c8, form == "V1"))); v10 <- setc(droplevels(subset(comp, form == "V1")))
 f1 <- accept ~ form * result * age + (1 + result | subj) + (1 + form + result + age | item) + (1 | pair)
 f2 <- accept ~ assoc * result * age + (1 + result | subj) + (1 + result + age | item) + (1 + assoc | pair)
 if (which %in% c("all", "m1")) { m1 <- fitb(f1, c8, "out/m1_8"); m1_10 <- fitb(f1, comp, "out/m1_10") }
