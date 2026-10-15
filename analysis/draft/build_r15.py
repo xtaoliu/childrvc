@@ -156,6 +156,14 @@ replace_markup(p56, "wants to break the walnut.", "wants to crack the walnut ope
 p52 = find(doc, "Each of the 20 actions was filmed in a full-result and a zero-result version")
 replace_markup(p52, " [Figure 1：full-result 与 zero-result 视频的截图]", " Figure 1 shows stills from the four videos of one pair.")
 add_figure(p52, "fig1")
+p80 = find(doc, "Children were tested individually in a quiet room in their kindergarten.")
+replace_markup(p80, "Children were tested individually in a quiet room in their kindergarten. After each video, they heard the question and answered orally,",
+  "Children were tested individually in a quiet room in their kindergarten. They were told that they would watch short videos and act as a \"little teacher\" (*xiǎo lǎoshī*), judging whether what the experimenter said about each video was right or wrong (*duì háishi bú duì*). Before the test trials, they were familiarized with three of the objects (a candle, a lychee, and a walnut). After each video, they heard the test question and answered orally, ⟦请核对：儿童指导语示例为陈述句加“我说得对还是不对啊？”（“这个人剥了一颗荔枝”），而数据中的测试句为“他剥了荔枝吗？”；请确认儿童实际听到的句式⟧")
+replace_markup(p80, "they received oral instructions from an experimenter and selected their answers themselves.",
+  "they were told that the experimenter would say what they had seen in each video and that they should judge whether this was right or wrong, and they selected their answers themselves. The practice trial used a filler video (*Zhège nǚhái pā-xià le ma?* \"Did this girl lie down?\").")
+p97 = find(doc, "The 40 critical videos were divided into four lists.")
+replace_markup(p97, "watched each video, and were asked to describe what happened. [指导语原文]",
+  "watched each video, and described it. Children were told that they would play a question-and-answer game. Before the test trials, they were familiarized with three of the objects (a candle, a lychee, and a walnut). After each video, the experimenter asked, *Nǐ kàn-dào le shénme ya?* \"What did you see?\" If a child responded with a verb, no further question was asked. If a child named only an object, the experimenter asked, *Nà zhège rén zài zuò shénme ya?* \"Then what is this person doing?\" If a child said that they did not know, the video was played again and the first question repeated; trials on which the child still did not know were not analyzed. Adults were told that they would watch short videos of everyday activities and should describe in one sentence what they saw in each video. The experimenter demonstrated the task with a filler video (*Yí ge nǚhái pā-xià le* \"A girl lay down\").")
 
 # ---------- Experiment 2 method ----------
 p100 = find(doc, "The coding unit is the complete response to a video")
@@ -183,7 +191,7 @@ replace_par("If children reject V1 descriptions of zero-result events more often
 replace_par("Why action–result association might matter", ["assoc_why"])
 replace_par("If children and adults show similar association effects", ["assoc_age"])
 replace_par("Because the stronger- and weaker-association expressions differ in both", ["assoc_conf"])
-replace_par("Comparing RVC use with mention of the target result", ["prod", "prod2", "prod3"])
+replace_par("Comparing RVC use with mention of the target result", ["prod", "prod2", "prod_instr", "prod3"])
 replace_par("Several limitations follow from the design.", ["lim"])
 set_text(find(doc, "[结论待根据结果改写]"), CONCLUSION)
 
@@ -192,6 +200,8 @@ delete(find(doc, "Skordos, D., & Papafragou, A. (2016)"))
 sp = find(doc, "Speer, R. (2022)")
 newref = copy.deepcopy(sp._p); sp._p.addprevious(newref)
 set_text(Paragraph(newref, sp._parent), "Song, Z. T., & Haryu, E. (2025, August). *\"The end matters\": Endstate salience in change-of-state events affects Mandarin-speaking children's acceptance of verbal packaging patterns of action and result* [Poster presentation]. European Conference on Developmental Psychology (ECDP 2025), Prague, Czech Republic.")
+newref2 = copy.deepcopy(sp._p); sp._p.addprevious(newref2)
+set_text(Paragraph(newref2, sp._parent), "Song, Z. T., & Haryu, E. (2026). *Mandarin-speaking children can correctly produce change-of-state verbs: Limited influence of event state structure* [Poster presentation]. APS Global Psychological Science Summit.")
 
 lastref = [p for p in doc.paragraphs if p.style.name == "Reference"][-1]
 h = insert_after(lastref, "Appendix", style="Heading 1"); h.paragraph_format.page_break_before = True
