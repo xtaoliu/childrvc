@@ -34,7 +34,9 @@ def _new_run_like(run_el, text, italic=None, highlight=False, sup=False):
 def markup_runs(run_el, text):
     """Return list of run elements cloned from run_el for marked-up text."""
     out = []
+    text = text.replace("\\*", "\uE000")
     for seg in TOKEN.split(smart(text)):
+        seg = seg.replace("\uE000", "*")
         if not seg: continue
         if seg.startswith("*") and seg.endswith("*") and len(seg) > 1:
             out.append(_new_run_like(run_el, seg[1:-1], italic=True))
