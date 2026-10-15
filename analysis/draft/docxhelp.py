@@ -13,7 +13,8 @@ def smart(text):
 
 def _new_run_like(run_el, text, italic=None, highlight=False, sup=False):
     r = copy.deepcopy(run_el)
-    for t in r.findall(qn("w:t")): r.remove(t)
+    for t in list(r):
+        if t.tag != qn("w:rPr"): r.remove(t)
     rpr = r.find(qn("w:rPr"))
     if rpr is not None:
         for tag in ("w:i", "w:iCs", "w:highlight", "w:vertAlign"):
@@ -93,7 +94,12 @@ def insert_after(p, text, style=None):
         if el.tag != qn("w:pPr"): new.remove(el)
     p._p.addnext(new)
     np_ = Paragraph(new, p._parent)
-    if style is not None: np_.style = style
+    if style is not None:
+        ppr = new.find(qn("w:pPr"))
+        if ppr is not None:
+            for e in list(ppr):
+                if e.tag != qn("w:pStyle"): ppr.remove(e)
+        np_.style = style
     if tmpl is None:
         np_.add_run(""); tmpl = np_.runs[0]._r; tmpl = copy.deepcopy(tmpl); clear(np_)
     for e in markup_runs(tmpl, text): np_._p.append(e)
