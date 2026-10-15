@@ -18,7 +18,7 @@ from text_sens import SENS
 SRC = "/home/user/childrvc/drafts/Manuscript_R14_final_from_user.docx"
 OUT = "/home/user/childrvc/drafts/Manuscript_R15_full_draft.docx"
 FIG = "/home/user/childrvc/analysis/fig/"
-FIGFILE = {"fig2": "fig2_comprehension.png", "fig3": "fig3_association.png", "fig4": "fig4_items.png", "fig5": "fig5_production.png"}
+FIGFILE = {"fig1": "fig1_stills.png", "fig2": "fig2_comprehension.png", "fig3": "fig3_association.png", "fig4": "fig4_items.png", "fig5": "fig5_production.png"}
 doc = Document(SRC)
 
 def delete(p):
@@ -45,7 +45,9 @@ set_cell(t1.rows[8].cells[3], "chě", "\n“pull”"); set_cell(t1.rows[8].cells
 set_cell(t1.rows[19].cells[4], "jiā-kāi"); set_plain(t1.rows[19].cells[7], "21")
 set_cell(t1.rows[20].cells[4], "chuí-kāi"); set_plain(t1.rows[20].cells[7], "1")
 note1 = find(doc, "Note. Likelihood was rated")
-replace_markup(note1, "ᶜ Includes many abstract uses.", "ᶜ Includes many abstract uses. ᵈ Includes idiomatic uses such as *chě-kāi sǎngzi* \"pull-open throat,\" \"raise one's voice.\" ⟦待核对：评定问卷中 Pair 4 为 zhuài \"pull\"、目标结果 pò \"torn\"，Pair 10 的目标结果为 suì \"broken\"；实验中使用的是 chě、sī-kāi/chě-kāi 和 jiā-kāi/chuí-kāi。表中评定数值仍为原评定结果，V1、RVC 和 CCL 列已改为实验用词。⟧")
+replace_markup(note1, "ᶜ Includes many abstract uses.", "ᶜ Includes many abstract uses. ᵈ Includes idiomatic uses such as *chě-kāi sǎngzi* \"pull-open throat,\" \"raise one's voice.\" ᵉ The rating items for this pair used *zhuài* \"drag\" instead of *chě* and the target result *pò* \"torn\" (Pair 4) or *suì* \"smashed\" (Pair 10) instead of *kāi* \"open.\"")
+for ri in (7, 8): set_plain(t1.rows[ri].cells[0], "4\u1D49")
+for ri in (19, 20): set_plain(t1.rows[ri].cells[0], "10\u1D49")
 p63 = find(doc, "We also examined how conventional each RVC is.")
 replace_markup(p63, "(e.g., sī-pò liǎn “tear-torn face,” “fall out with someone”)", "(e.g., *chě-kāi sǎngzi* \"pull-open throat,\" \"raise one's voice\")")
 
@@ -101,6 +103,35 @@ def add_table2(after):
     tbl._tbl.addnext(note_p); np_ = Paragraph(note_p, b._parent); set_text(np_, TABLE2_NOTE)
     return np_
 
+def add_tableA1(after):
+    a = insert_after(after, "Table A1", style="Table Number")
+    b = insert_after(a, "*Proportion of Descriptions Containing the Intended V1 in the Verb–Video Correspondence Norming*", style="Table Title")
+    nv = pd.read_csv("/home/user/childrvc/analysis/norming_video.csv")
+    py = {"bo": "bāo", "xian": "xiān", "bai": "bāi", "si": "sī", "chui": "chuī", "ti": "tī", "qia": "qiā", "tu": "tú", "ca": "cā", "jia": "jiā",
+          "nie": "niē", "pai": "pāi", "an": "àn", "che": "chě", "hui": "huī", "tui": "tuī", "jiao": "jiào", "nao": "náo", "chong": "chōng"}
+    hdr = ["Pair", "Stronger-association V1", "First", "All", "Weaker-association V1", "First", "All"]
+    rows = []
+    for k in range(1, 11):
+        s_ = nv[(nv.pair == k) & (nv.assoc == "stronger")].iloc[0]; w_ = nv[(nv.pair == k) & (nv.assoc == "weaker")].iloc[0]
+        wv = "chuí" if (k == 10) else py[w_.v1]
+        rows.append([str(k) + ("\u1D43" if k in (7, 8) else ""), "*" + py[s_.v1] + "*", f"{s_['first']:.2f}", f"{s_['all']:.2f}", "*" + wv + "*", f"{w_['first']:.2f}", f"{w_['all']:.2f}"])
+    tbl = doc.add_table(rows=1 + len(rows), cols=len(hdr))
+    tblPr = copy.deepcopy(t1._tbl.tblPr)
+    for e in tblPr.findall(qn("w:tblLayout")): tblPr.remove(e)
+    tbl._tbl.remove(tbl._tbl.tblPr); tbl._tbl.insert(0, tblPr)
+    for i, row in enumerate([hdr] + rows):
+        for j, txt in enumerate(row):
+            cell = tbl.rows[i].cells[j]; p = cell.paragraphs[0]; p.style = doc.styles["Table Text"]
+            for e in markup_runs(p.add_run("")._r, txt): p._p.append(e)
+            if j in (2, 3, 5, 6): p.alignment = WD_ALIGN_PARAGRAPH.CENTER
+            if i == 0:
+                tcPr = cell._tc.get_or_add_tcPr(); bd = tcPr.makeelement(qn("w:tcBorders"), {})
+                bd.append(bd.makeelement(qn("w:bottom"), {qn("w:val"): "single", qn("w:sz"): "4", qn("w:space"): "0", qn("w:color"): "000000"})); tcPr.append(bd)
+    b._p.addnext(tbl._tbl)
+    note_p = copy.deepcopy(note1._p); tbl._tbl.addnext(note_p); np_ = Paragraph(note_p, b._parent)
+    set_text(np_, "*Note.* First = proportion of participants whose first description contained the intended V1; All = proportion of all descriptions, including those given on request, that contained the intended V1 (*n* = 8 participants per video). The All values are used as the covariate in the sensitivity analysis of Experiment 1. ᵃ Excluded from the analyses of Experiment 1.")
+    return np_
+
 def write_block(anchor, items):
     """Insert (kind, text) items after anchor; return last paragraph."""
     cur = anchor
@@ -119,7 +150,10 @@ p91 = find(doc, "[待补：按八对、两组方案重新分析后报告。")
 set_text(p90, EXP1_RESULTS[0][1]); delete(p91)
 write_block(p90, EXP1_RESULTS[1:])
 p54 = find(doc, "Because each expression was paired with its own video")
-replace_markup(p54, "These item-level values are used as a covariate in a sensitivity analysis of Experiment 1.", "These item-level values are to be used as a covariate in a sensitivity analysis of Experiment 1. ⟦逐项数值到位后补做该协变量分析⟧")
+replace_markup(p54, " [逐项数值放附录]", " Item-level values are given in Table A1 in the Appendix.")
+p52 = find(doc, "Each of the 20 actions was filmed in a full-result and a zero-result version")
+replace_markup(p52, " [Figure 1：full-result 与 zero-result 视频的截图]", " Figure 1 shows stills from the four videos of one pair.")
+add_figure(p52, "fig1")
 
 # ---------- Experiment 2 method ----------
 p100 = find(doc, "The coding unit is the complete response to a video")
@@ -154,4 +188,7 @@ set_text(find(doc, "[结论待根据结果改写]"), CONCLUSION)
 # ---------- References ----------
 delete(find(doc, "Skordos, D., & Papafragou, A. (2016)"))
 
+lastref = [p for p in doc.paragraphs if p.style.name == "Reference"][-1]
+h = insert_after(lastref, "Appendix", style="Heading 1"); h.paragraph_format.page_break_before = True
+add_tableA1(h)
 doc.save(OUT); print("saved", OUT)

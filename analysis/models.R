@@ -18,6 +18,12 @@ f1 <- accept ~ form * result * age + (1 + result | subj) + (1 + form + result + 
 f2 <- accept ~ assoc * result * age + (1 + result | subj) + (1 + result + age | item) + (1 + assoc | pair)
 if (which %in% c("all", "m1")) { m1 <- fitb(f1, c8, "out/m1_8"); m1_10 <- fitb(f1, comp, "out/m1_10") }
 if (which %in% c("all", "m2")) { m2 <- fitb(f2, v8, "out/m2_8"); m2_10 <- fitb(f2, v10, "out/m2_10") }
+if (which %in% c("all", "cov")) {
+  nv <- read.csv("norming_video.csv")
+  addvc <- function(d) { d <- left_join(d, nv[, c("pair", "assoc", "all")], by = c("pair", "assoc")); d$vc <- d$all - mean(nv$all[!nv$pair %in% c(7, 8)]); setc(d) }
+  c8v <- addvc(c8); v8v <- addvc(v8)
+  m1c <- fitb(update(f1, . ~ . + vc + vc:result), c8v, "out/m1_8_cov")
+  m2c <- fitb(update(f2, . ~ . + vc + vc:result), v8v, "out/m2_8_cov") }
 if (which %in% c("all", "lopo")) {
   m2 <- fitb(f2, v8, "out/m2_8")
   for (pp in sort(unique(v8$pair))) { d <- droplevels(subset(v8, pair != pp)); d <- setc(d)
