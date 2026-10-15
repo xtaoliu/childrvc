@@ -151,3 +151,18 @@
 含义：两组的对比是事先设计的，RQ2 仍按事先设计的对比来写；但用评定定义两组、剔除两对都是事后步骤，因此 10 对的分析必须与主分析并列报告。
 
 **仍待作者确认：** 评定者是否确实没有参加儿童实验、也没有获知儿童结果。
+
+# R11（2026-10-15）：按 Ünal et al. (2016) 的写法压缩“两个维度”的理论论证
+
+交付稿：`drafts/Manuscript_R11_APA.docx`（在 R10 上修改）。
+
+**依据：** 导师原话：“可以参考附件中的论文，其中关于 low vs. high indirectness 的对比也是源于实验初步结果、而相关理论研究比较缺乏的一个因素。”含义是：动作–结果关联这一因素在初步结果之后才明确，缺少直接的理论基础，可以像 Ünal 等人那样用独立指标刻画、进入分析，解释放到 Discussion，不必在引言中补理论。与导师 1010 批注“norming 服务于原有实验，而不是变成新的研究”一致。
+
+**修改：**
+1. 引言小节标题改为 “Monomorphemic V1s: Classification and Action–Result Association”。
+2. 该节原有的 4 段（两个维度的定义、likelihood→culmination 推理、typicality→目标衍生范畴、两者共同使用及语料频次）压缩为 1 段：定义关联，说明“相关理论很少，本研究以经验方式刻画而非从理论推出”，介绍两个评分及吹/挥蜡烛的例子，说明两者共同用来验证和刻画配对对比、不分离贡献。语料频次只留在 Materials。
+3. 引言概述段末相应改为 “how the present study characterizes it”。
+4. General Discussion 的 Action–Result Association 部分新增一段，接住移出的理论内容（Chen 2018；Kou & Hohenstein 2022, 2024；Barsalou 1985；Ma et al. 2021；Kim & Murphy 2011），并明确这些是对两组差异的可能解释，不是本研究事先要检验的假设。
+5. Limitations 第四点：说明评定和剔除发生在对同一批儿童数据的初步分析之后，两组差异需要在新的儿童样本中重复。
+
+未改动：RQ、预测、Materials、分析计划。
