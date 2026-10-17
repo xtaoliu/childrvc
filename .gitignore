@@ -3,3 +3,5 @@ analysis/*.pkl
 analysis/comp.csv
 analysis/prod.csv
 __pycache__/
+analysis/prod_coding_check.xlsx
+analysis/prod_utf8bom.csv
